@@ -20,3 +20,8 @@ mkdir -p ../models/megatron-models/345m
 unzip megatron_lm_345m_v0.0.zip -d ../models/megatron-models/345m
 ```
 
+## compile
+
+```bash
+make
+```

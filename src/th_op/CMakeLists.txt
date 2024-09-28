@@ -8,3 +8,12 @@ set_property(TARGET th_utils PROPERTY CUDA_RESOLVE_DEVICE_SYMBOLS  ON)
 target_link_libraries(th_utils PUBLIC "${TORCH_LIBRARIES}" -lcublas -lcudart -lcurand tensor)
 
 add_subdirectory(gpt)
+
+add_library(th_transformer SHARED
+            $<TARGET_OBJECTS:th_utils>
+)
+
+target_link_libraries(th_transformer PUBLIC "${TORCH_LIBRARIES}"
+                      th_gpt
+                      th_utils
+)
