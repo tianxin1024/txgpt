@@ -24,7 +24,7 @@ build:
 	@$(CMAKE_MAKE) && make -s -j$(NUM_JOBS)
 
 run :
-	@cd build/bin && ./$(PRO) 
+	@cd examples && python gpt_example.py
 
 debug :
 	@cd build/bin && gdb -x ./init.gdb
