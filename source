@@ -7,4 +7,5 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:${PWD}/3rdparty
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:${PWD}/3rdparty/cutlass/include
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:${PWD}/3rdparty/trt_fused_multihead_attention
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:${PWD}/src/cutlass_extensions/include
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:${HOME}/anaconda3/lib/python3.9/site-packages/torch/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PWD}/build/lib
