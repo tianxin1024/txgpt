@@ -25,3 +25,6 @@ unzip megatron_lm_345m_v0.0.zip -d ../models/megatron-models/345m
 ```bash
 make
 ```
+
+## 注意
+    使用compile_command.json， vim编译cu文件时会出现报红的信息。采用source source直接export include文件
